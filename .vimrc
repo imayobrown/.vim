@@ -15,3 +15,4 @@ colorscheme desert
 
 " Setting new file associations not inherent in vim
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.gyp set filetype=javascript
