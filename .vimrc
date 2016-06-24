@@ -16,3 +16,21 @@ colorscheme desert
 " Setting new file associations not inherent in vim
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.gyp set filetype=javascript
+
+" Setting status line options for mac
+if has('macunix')
+"    set statusline=%t "tail of filename
+    set statusline=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+    set statusline+=+=%{&ff}] "file format
+    set statusline+=%h      "help file flag
+    set statusline+=%m      "modified flag
+    set statusline+=%r      "read only flag
+    set statusline+=%y      "filetype
+    set statusline+=%=      "left/right separator
+    set statusline+=%c,     "cursor column
+    set statusline+=%l/%L   "cursor line/total lines
+    set statusline+=\ %P    "percent through file
+endif
+
+" Let airline show multiple buffers
+let g:airline#extensions#tabline#enabled = 1
