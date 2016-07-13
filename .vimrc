@@ -16,6 +16,8 @@ colorscheme desert
 " Setting new file associations not inherent in vim
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.gyp set filetype=javascript
+au BufNewFile,BufRead *.bats set filetype=sh
+au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 " Setting status line options for mac
 if has('macunix')
