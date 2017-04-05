@@ -14,6 +14,11 @@ syntax enable
 set background=dark
 colorscheme desert
 
+noremap <C-J> <C-W><C-J>
+noremap <C-K> <C-W><C-K>
+noremap <C-L> <C-W><C-L>
+noremap <C-H> <C-W><C-H>
+
 " Setting new file associations not inherent in vim
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.gyp set filetype=javascript
