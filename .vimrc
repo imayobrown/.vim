@@ -14,10 +14,13 @@ syntax enable
 set background=dark
 colorscheme desert
 
+" Set mappings for NERDTree toggling and easier split navigation
 noremap <C-J> <C-W><C-J>
 noremap <C-K> <C-W><C-K>
 noremap <C-L> <C-W><C-L>
 noremap <C-H> <C-W><C-H>
+
+map <C-n> :NERDTreeToggle<CR>
 
 " Setting new file associations not inherent in vim
 au BufNewFile,BufRead *.ejs set filetype=html
