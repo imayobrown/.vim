@@ -22,6 +22,9 @@ noremap <C-H> <C-W><C-H>
 
 map <C-n> :NERDTreeToggle<CR>
 
+" Set python code to look pretty
+let python_highlight_all=1
+
 " Setting new file associations not inherent in vim
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.gyp set filetype=javascript
