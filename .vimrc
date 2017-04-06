@@ -29,6 +29,7 @@ let python_highlight_all=1
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.gyp set filetype=javascript
 au BufNewFile,BufRead *.bats set filetype=sh
+au BufNewFile,BufRead Jenkinsfile set filetype=groovy
 au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 " Setting status line options for mac
