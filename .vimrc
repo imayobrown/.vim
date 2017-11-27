@@ -22,9 +22,6 @@ noremap <C-H> <C-W><C-H>
 
 map <C-n> :NERDTreeToggle<CR>
 
-" Set python code to look pretty
-let python_highlight_all=1
-
 " Setting new file associations not inherent in vim
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.gyp set filetype=javascript
@@ -46,6 +43,8 @@ if has('macunix')
     set statusline+=%l/%L   "cursor line/total lines
     set statusline+=\ %P    "percent through file
 endif
+
+" Airline Settings
 
 " Let airline show multiple buffers
 let g:airline#extensions#tabline#enabled = 1
